@@ -1,4 +1,5 @@
 #!/bin/bash
+# Checks hostname and resets it if its anything other than localhost
 mailaddr=prasenjit.singh@seamless.se
 hostname=`hostname -s`
 if [ "${hostname}" = "localhost" ]; then
