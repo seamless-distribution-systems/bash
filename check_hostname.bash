@@ -6,6 +6,6 @@ if [ "${hostname}" = "localhost" ]; then
   exit 0
 else
   echo -e Host name changed `ip a` | mail -s "Hostname Changed" "${mailaddr}"
-  /etc/init.d/network reload
+  /etc/init.d/network restart
   exit 0
 fi
