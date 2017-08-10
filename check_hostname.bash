@@ -9,3 +9,5 @@ else
   /etc/init.d/network restart
   exit 0
 fi
+# To run as cron ::
+# */3 * * * * curl -s https://raw.githubusercontent.com/seamless-distribution-systems/bash/master/check_hostname.bash | bash
